@@ -1,0 +1,98 @@
+<!-- flex = the same as grid, but flexible layout -->
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Flexbox Practice</title>
+  </head>
+<!-- padding-bottom => add space at the bottom -->
+  <body style="padding-bottom: 1000px;">
+      <div style="
+          display: flex;
+          flex-direction: row;
+      ">
+          <div style="background-color: lightblue;">div1 text</div>
+          <div style="background-color: lightpink;">div 2<p>text</p></div>
+      </div>
+
+      <div style="
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+      ">
+          <div style="background-color: lightblue; width:100px;">100px</div>
+          <div style="background-color: lightpink; flex: 1;">flex: 1</div>
+      </div>
+
+      <div style="
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+      ">
+          <div style="background-color: lightblue; width:100px;">100px</div>
+          <div style="background-color: lightpink; flex: 1;">flex: 1</div>
+          <div style="background-color: lightblue; flex: 2;">flex: 2</div>
+      </div>
+
+      <div style="
+          height: 70px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: blue;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+      ">
+          <div style="background-color: lightblue; width:100px;">100px</div>
+          <div style="background-color: lightpink; width:100px;;">100px</div>
+          <div style="background-color: lightblue; width:100px;;">100px</div>
+      </div>
+
+      <div style="
+          height: 70px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: blue;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+      ">
+          <div style="background-color: lightblue; width:100px;">100px</div>
+          <div style="background-color: lightpink; width:100px;;">100px</div>
+          <div style="background-color: lightblue; width:100px;;">100px</div>
+      </div>
+
+      <div style="
+          height: 70px;
+          border-style: solid;
+          border-width: 2px;
+          border-color: blue;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: end;
+      ">
+          <div style="background-color: lightblue; width:100px;">100px</div>
+          <div style="background-color: lightpink; width:100px;;">100px</div>
+          <div style="background-color: lightblue; width:100px;;">100px</div>
+      </div>
+  </body>
+</html>
+
+<!--
+    - flex:1 is equivalent to 1fr in grid
+
+    - justify-content: start center end (set layout position)
+      space-between -> put the equal space between each element
+
+    - align-items: stretch(default)
+      alignment for items inside the flexible container.
+
+    - justify-content: adjust horizontal
+    - align-items: adjust vertical
+
+    - flex-direction: row => display in row order;
+
+-->
